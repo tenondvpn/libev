@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "../bin/ss-server"
+  "../bin/ss-server.pdb"
+  "CMakeFiles/ss-server.dir/acl.c.o"
+  "CMakeFiles/ss-server.dir/acl.c.o.d"
+  "CMakeFiles/ss-server.dir/aead.c.o"
+  "CMakeFiles/ss-server.dir/aead.c.o.d"
+  "CMakeFiles/ss-server.dir/base64.c.o"
+  "CMakeFiles/ss-server.dir/base64.c.o.d"
+  "CMakeFiles/ss-server.dir/cache.c.o"
+  "CMakeFiles/ss-server.dir/cache.c.o.d"
+  "CMakeFiles/ss-server.dir/crypto.c.o"
+  "CMakeFiles/ss-server.dir/crypto.c.o.d"
+  "CMakeFiles/ss-server.dir/jconf.c.o"
+  "CMakeFiles/ss-server.dir/jconf.c.o.d"
+  "CMakeFiles/ss-server.dir/json.c.o"
+  "CMakeFiles/ss-server.dir/json.c.o.d"
+  "CMakeFiles/ss-server.dir/netutils.c.o"
+  "CMakeFiles/ss-server.dir/netutils.c.o.d"
+  "CMakeFiles/ss-server.dir/plugin.c.o"
+  "CMakeFiles/ss-server.dir/plugin.c.o.d"
+  "CMakeFiles/ss-server.dir/ppbloom.c.o"
+  "CMakeFiles/ss-server.dir/ppbloom.c.o.d"
+  "CMakeFiles/ss-server.dir/resolv.c.o"
+  "CMakeFiles/ss-server.dir/resolv.c.o.d"
+  "CMakeFiles/ss-server.dir/rule.c.o"
+  "CMakeFiles/ss-server.dir/rule.c.o.d"
+  "CMakeFiles/ss-server.dir/server.c.o"
+  "CMakeFiles/ss-server.dir/server.c.o.d"
+  "CMakeFiles/ss-server.dir/stream.c.o"
+  "CMakeFiles/ss-server.dir/stream.c.o.d"
+  "CMakeFiles/ss-server.dir/udprelay.c.o"
+  "CMakeFiles/ss-server.dir/udprelay.c.o.d"
+  "CMakeFiles/ss-server.dir/utils.c.o"
+  "CMakeFiles/ss-server.dir/utils.c.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/ss-server.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

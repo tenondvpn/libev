@@ -1,0 +1,1073 @@
+The system is: Linux - 3.10.0-1160.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/local/gcc-8.3.0/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/3.25.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/local/gcc-8.3.0/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/3.25.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HrxS04
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50576/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50576.dir/build.make CMakeFiles/cmTC_50576.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HrxS04'
+Building C object CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -v -o CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o -c /root/tools/cmake-3.25.1-linux-x86_64/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/local/gcc-8.3.0/bin/gcc
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --prefix=/usr/local/gcc-8.3.0 --enable-checking=release --enable-languages=c,c++ --disable-multilib
+Thread model: posix
+gcc version 8.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/cc1 -quiet -v /root/tools/cmake-3.25.1-linux-x86_64/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccDYfAs8.s
+GNU C17 (GCC) version 8.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include
+ /usr/local/include
+ /usr/local/gcc-8.3.0/include
+ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 8.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c9b626fe00f5d61c7ae5636e110a4a25
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o /tmp/ccDYfAs8.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_50576
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50576.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -v -rdynamic CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o -o cmTC_50576 
+Using built-in specs.
+COLLECT_GCC=/usr/local/gcc-8.3.0/bin/gcc
+COLLECT_LTO_WRAPPER=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --prefix=/usr/local/gcc-8.3.0 --enable-checking=release --enable-languages=c,c++ --disable-multilib
+Thread model: posix
+gcc version 8.3.0 (GCC) 
+COMPILER_PATH=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_50576' '-mtune=generic' '-march=x86-64'
+ /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/collect2 -plugin /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/liblto_plugin.so -plugin-opt=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSqPpu7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_50576 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0 -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../.. CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_50576' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HrxS04'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include]
+    add: [/usr/local/include]
+    add: [/usr/local/gcc-8.3.0/include]
+    add: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include] ==> [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/local/gcc-8.3.0/include] ==> [/usr/local/gcc-8.3.0/include]
+  collapse include dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed] ==> [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include;/usr/local/include;/usr/local/gcc-8.3.0/include;/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HrxS04]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50576/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50576.dir/build.make CMakeFiles/cmTC_50576.dir/build]
+  ignore line: [gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HrxS04']
+  ignore line: [Building C object CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/local/gcc-8.3.0/bin/gcc   -v -o CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o -c /root/tools/cmake-3.25.1-linux-x86_64/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/gcc-8.3.0/bin/gcc]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/usr/local/gcc-8.3.0 --enable-checking=release --enable-languages=c c++ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/cc1 -quiet -v /root/tools/cmake-3.25.1-linux-x86_64/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccDYfAs8.s]
+  ignore line: [GNU C17 (GCC) version 8.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/local/gcc-8.3.0/include]
+  ignore line: [ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 8.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c9b626fe00f5d61c7ae5636e110a4a25]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o /tmp/ccDYfAs8.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_50576]
+  ignore line: [/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50576.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/gcc-8.3.0/bin/gcc  -v -rdynamic CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o -o cmTC_50576 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/gcc-8.3.0/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/usr/local/gcc-8.3.0 --enable-checking=release --enable-languages=c c++ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_50576' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/collect2 -plugin /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/liblto_plugin.so -plugin-opt=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSqPpu7.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_50576 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0 -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../.. CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccSqPpu7.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_50576] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o] ==> obj [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o]
+    arg [-L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0] ==> dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0]
+    arg [-L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64] ==> dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../..] ==> dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../..]
+    arg [CMakeFiles/cmTC_50576.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o] ==> obj [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0] ==> [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0]
+  collapse library dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64] ==> [/usr/local/gcc-8.3.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../..] ==> [/usr/local/gcc-8.3.0/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o;/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0;/usr/local/gcc-8.3.0/lib64;/lib64;/usr/lib64;/usr/local/gcc-8.3.0/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-fvqRuN
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4416d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4416d.dir/build.make CMakeFiles/cmTC_4416d.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-fvqRuN'
+Building CXX object CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/gcc-8.3.0/bin/g++   -v -o CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o -c /root/tools/cmake-3.25.1-linux-x86_64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/local/gcc-8.3.0/bin/g++
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --prefix=/usr/local/gcc-8.3.0 --enable-checking=release --enable-languages=c,c++ --disable-multilib
+Thread model: posix
+gcc version 8.3.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/cc1plus -quiet -v -D_GNU_SOURCE /root/tools/cmake-3.25.1-linux-x86_64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccFFCY99.s
+GNU C++14 (GCC) version 8.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../x86_64-pc-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0
+ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu
+ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/backward
+ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include
+ /usr/local/include
+ /usr/local/gcc-8.3.0/include
+ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 8.3.0 (x86_64-pc-linux-gnu)
+	compiled by GNU C version 8.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 51051b53f302c84639693bcbaf471571
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFFCY99.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_4416d
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4416d.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/g++  -v -rdynamic CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4416d 
+Using built-in specs.
+COLLECT_GCC=/usr/local/gcc-8.3.0/bin/g++
+COLLECT_LTO_WRAPPER=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: ../configure --prefix=/usr/local/gcc-8.3.0 --enable-checking=release --enable-languages=c,c++ --disable-multilib
+Thread model: posix
+gcc version 8.3.0 (GCC) 
+COMPILER_PATH=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4416d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/collect2 -plugin /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/liblto_plugin.so -plugin-opt=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX5ZZUc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4416d /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0 -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../.. CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4416d' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-fvqRuN'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0]
+    add: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu]
+    add: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/backward]
+    add: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include]
+    add: [/usr/local/include]
+    add: [/usr/local/gcc-8.3.0/include]
+    add: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0] ==> [/usr/local/gcc-8.3.0/include/c++/8.3.0]
+  collapse include dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu] ==> [/usr/local/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu]
+  collapse include dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/backward] ==> [/usr/local/gcc-8.3.0/include/c++/8.3.0/backward]
+  collapse include dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include] ==> [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/local/gcc-8.3.0/include] ==> [/usr/local/gcc-8.3.0/include]
+  collapse include dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed] ==> [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/local/gcc-8.3.0/include/c++/8.3.0;/usr/local/gcc-8.3.0/include/c++/8.3.0/x86_64-pc-linux-gnu;/usr/local/gcc-8.3.0/include/c++/8.3.0/backward;/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include;/usr/local/include;/usr/local/gcc-8.3.0/include;/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-fvqRuN]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4416d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4416d.dir/build.make CMakeFiles/cmTC_4416d.dir/build]
+  ignore line: [gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-fvqRuN']
+  ignore line: [Building CXX object CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/gcc-8.3.0/bin/g++   -v -o CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o -c /root/tools/cmake-3.25.1-linux-x86_64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/gcc-8.3.0/bin/g++]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/usr/local/gcc-8.3.0 --enable-checking=release --enable-languages=c c++ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/cc1plus -quiet -v -D_GNU_SOURCE /root/tools/cmake-3.25.1-linux-x86_64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccFFCY99.s]
+  ignore line: [GNU C++14 (GCC) version 8.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0]
+  ignore line: [ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu]
+  ignore line: [ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/backward]
+  ignore line: [ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/local/gcc-8.3.0/include]
+  ignore line: [ /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 8.3.0 (x86_64-pc-linux-gnu)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 51051b53f302c84639693bcbaf471571]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFFCY99.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_4416d]
+  ignore line: [/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4416d.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/gcc-8.3.0/bin/g++  -v -rdynamic CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4416d ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/gcc-8.3.0/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/usr/local/gcc-8.3.0 --enable-checking=release --enable-languages=c c++ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4416d' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/collect2 -plugin /usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/liblto_plugin.so -plugin-opt=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccX5ZZUc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4416d /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0 -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../.. CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/local/gcc-8.3.0/libexec/gcc/x86_64-pc-linux-gnu/8.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccX5ZZUc.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_4416d] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o] ==> obj [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o]
+    arg [-L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0] ==> dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0]
+    arg [-L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64] ==> dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../..] ==> dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../..]
+    arg [CMakeFiles/cmTC_4416d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o] ==> obj [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0] ==> [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0]
+  collapse library dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../lib64] ==> [/usr/local/gcc-8.3.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../..] ==> [/usr/local/gcc-8.3.0/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtbegin.o;/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/usr/local/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0;/usr/local/gcc-8.3.0/lib64;/lib64;/usr/lib64;/usr/local/gcc-8.3.0/lib]
+  implicit fwks: []
+
+
+Determining if files dlfcn.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9YZScw
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dc89d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dc89d.dir/build.make CMakeFiles/cmTC_dc89d.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9YZScw'
+Building C object CMakeFiles/cmTC_dc89d.dir/HAVE_DLFCN_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_dc89d.dir/HAVE_DLFCN_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9YZScw/HAVE_DLFCN_H.c
+Linking C executable cmTC_dc89d
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc89d.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_dc89d.dir/HAVE_DLFCN_H.c.o -o cmTC_dc89d 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9YZScw'
+
+
+
+Determining if files ev.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-45UD3e
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d6348/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d6348.dir/build.make CMakeFiles/cmTC_d6348.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-45UD3e'
+Building C object CMakeFiles/cmTC_d6348.dir/HAVE_EV_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_d6348.dir/HAVE_EV_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-45UD3e/HAVE_EV_H.c
+Linking C executable cmTC_d6348
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6348.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_d6348.dir/HAVE_EV_H.c.o -o cmTC_d6348 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-45UD3e'
+
+
+
+Determining if files fcntl.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Rfra4X
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_78d41/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_78d41.dir/build.make CMakeFiles/cmTC_78d41.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Rfra4X'
+Building C object CMakeFiles/cmTC_78d41.dir/HAVE_FCNTL_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_78d41.dir/HAVE_FCNTL_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Rfra4X/HAVE_FCNTL_H.c
+Linking C executable cmTC_78d41
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78d41.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_78d41.dir/HAVE_FCNTL_H.c.o -o cmTC_78d41 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Rfra4X'
+
+
+
+Determining if the function fork exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-1oqbdH
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8a2de/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8a2de.dir/build.make CMakeFiles/cmTC_8a2de.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-1oqbdH'
+Building C object CMakeFiles/cmTC_8a2de.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=fork -fPIE -o CMakeFiles/cmTC_8a2de.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-1oqbdH/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘fork’ [-Wbuiltin-declaration-mismatch]
+/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-1oqbdH/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_8a2de
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a2de.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=fork -rdynamic CMakeFiles/cmTC_8a2de.dir/CheckFunctionExists.c.o -o cmTC_8a2de 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-1oqbdH'
+
+
+
+Determining if the function getpwnam_r exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s2hyuq
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8c1ef/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8c1ef.dir/build.make CMakeFiles/cmTC_8c1ef.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s2hyuq'
+Building C object CMakeFiles/cmTC_8c1ef.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=getpwnam_r -fPIE -o CMakeFiles/cmTC_8c1ef.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s2hyuq/CheckFunctionExists.c
+Linking C executable cmTC_8c1ef
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c1ef.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=getpwnam_r -rdynamic CMakeFiles/cmTC_8c1ef.dir/CheckFunctionExists.c.o -o cmTC_8c1ef 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s2hyuq'
+
+
+
+Determining if the function inet_ntop exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-eJrzU9
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5b07e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5b07e.dir/build.make CMakeFiles/cmTC_5b07e.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-eJrzU9'
+Building C object CMakeFiles/cmTC_5b07e.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=inet_ntop -fPIE -o CMakeFiles/cmTC_5b07e.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-eJrzU9/CheckFunctionExists.c
+Linking C executable cmTC_5b07e
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b07e.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=inet_ntop -rdynamic CMakeFiles/cmTC_5b07e.dir/CheckFunctionExists.c.o -o cmTC_5b07e 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-eJrzU9'
+
+
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-FEpRsT
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1ddf7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1ddf7.dir/build.make CMakeFiles/cmTC_1ddf7.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-FEpRsT'
+Building C object CMakeFiles/cmTC_1ddf7.dir/HAVE_INTTYPES_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_1ddf7.dir/HAVE_INTTYPES_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-FEpRsT/HAVE_INTTYPES_H.c
+Linking C executable cmTC_1ddf7
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ddf7.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_1ddf7.dir/HAVE_INTTYPES_H.c.o -o cmTC_1ddf7 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-FEpRsT'
+
+
+
+Determining if files langinfo.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-G28Z9C
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12383/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_12383.dir/build.make CMakeFiles/cmTC_12383.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-G28Z9C'
+Building C object CMakeFiles/cmTC_12383.dir/HAVE_LANGINFO_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_12383.dir/HAVE_LANGINFO_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-G28Z9C/HAVE_LANGINFO_H.c
+Linking C executable cmTC_12383
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12383.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_12383.dir/HAVE_LANGINFO_H.c.o -o cmTC_12383 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-G28Z9C'
+
+
+
+Determining if files limits.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-tyDWW6
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_93b30/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_93b30.dir/build.make CMakeFiles/cmTC_93b30.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-tyDWW6'
+Building C object CMakeFiles/cmTC_93b30.dir/HAVE_LIMITS_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_93b30.dir/HAVE_LIMITS_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-tyDWW6/HAVE_LIMITS_H.c
+Linking C executable cmTC_93b30
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93b30.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_93b30.dir/HAVE_LIMITS_H.c.o -o cmTC_93b30 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-tyDWW6'
+
+
+
+Determining if files locale.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-pWndK5
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6f618/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6f618.dir/build.make CMakeFiles/cmTC_6f618.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-pWndK5'
+Building C object CMakeFiles/cmTC_6f618.dir/HAVE_LOCALE_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_6f618.dir/HAVE_LOCALE_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-pWndK5/HAVE_LOCALE_H.c
+Linking C executable cmTC_6f618
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f618.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_6f618.dir/HAVE_LOCALE_H.c.o -o cmTC_6f618 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-pWndK5'
+
+
+
+Determining if the function malloc exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-puY0bQ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ccf74/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ccf74.dir/build.make CMakeFiles/cmTC_ccf74.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-puY0bQ'
+Building C object CMakeFiles/cmTC_ccf74.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=malloc -fPIE -o CMakeFiles/cmTC_ccf74.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-puY0bQ/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-puY0bQ/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_ccf74
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccf74.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=malloc -rdynamic CMakeFiles/cmTC_ccf74.dir/CheckFunctionExists.c.o -o cmTC_ccf74 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-puY0bQ'
+
+
+
+Determining if files memory.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ICWcMA
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6bf57/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6bf57.dir/build.make CMakeFiles/cmTC_6bf57.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ICWcMA'
+Building C object CMakeFiles/cmTC_6bf57.dir/HAVE_MEMORY_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_6bf57.dir/HAVE_MEMORY_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ICWcMA/HAVE_MEMORY_H.c
+Linking C executable cmTC_6bf57
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bf57.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_6bf57.dir/HAVE_MEMORY_H.c.o -o cmTC_6bf57 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ICWcMA'
+
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-B8hkvl
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_89cfb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_89cfb.dir/build.make CMakeFiles/cmTC_89cfb.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-B8hkvl'
+Building C object CMakeFiles/cmTC_89cfb.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=memset -fPIE -o CMakeFiles/cmTC_89cfb.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-B8hkvl/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘memset’ [-Wbuiltin-declaration-mismatch]
+/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-B8hkvl/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_89cfb
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89cfb.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=memset -rdynamic CMakeFiles/cmTC_89cfb.dir/CheckFunctionExists.c.o -o cmTC_89cfb 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-B8hkvl'
+
+
+
+Determining if files netdb.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-CLrQm6
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_da706/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_da706.dir/build.make CMakeFiles/cmTC_da706.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-CLrQm6'
+Building C object CMakeFiles/cmTC_da706.dir/HAVE_NETDB_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_da706.dir/HAVE_NETDB_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-CLrQm6/HAVE_NETDB_H.c
+Linking C executable cmTC_da706
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da706.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_da706.dir/HAVE_NETDB_H.c.o -o cmTC_da706 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-CLrQm6'
+
+
+
+Determining if files netinet/in.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Sh8QnR
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_93bae/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_93bae.dir/build.make CMakeFiles/cmTC_93bae.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Sh8QnR'
+Building C object CMakeFiles/cmTC_93bae.dir/HAVE_NETINET_IN_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_93bae.dir/HAVE_NETINET_IN_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Sh8QnR/HAVE_NETINET_IN_H.c
+Linking C executable cmTC_93bae
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93bae.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_93bae.dir/HAVE_NETINET_IN_H.c.o -o cmTC_93bae 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Sh8QnR'
+
+
+
+Determining if files netinet/tcp.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-EHIpyC
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4b709/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4b709.dir/build.make CMakeFiles/cmTC_4b709.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-EHIpyC'
+Building C object CMakeFiles/cmTC_4b709.dir/HAVE_NETINET_TCP_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_4b709.dir/HAVE_NETINET_TCP_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-EHIpyC/HAVE_NETINET_TCP_H.c
+Linking C executable cmTC_4b709
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b709.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_4b709.dir/HAVE_NETINET_TCP_H.c.o -o cmTC_4b709 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-EHIpyC'
+
+
+
+Determining if files linux/tcp.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-LPm8Rn
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7f74a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7f74a.dir/build.make CMakeFiles/cmTC_7f74a.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-LPm8Rn'
+Building C object CMakeFiles/cmTC_7f74a.dir/HAVE_LINUX_TCP_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_7f74a.dir/HAVE_LINUX_TCP_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-LPm8Rn/HAVE_LINUX_TCP_H.c
+Linking C executable cmTC_7f74a
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f74a.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_7f74a.dir/HAVE_LINUX_TCP_H.c.o -o cmTC_7f74a 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-LPm8Rn'
+
+
+
+Determining if files net/if.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ZDjwk9
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a6956/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a6956.dir/build.make CMakeFiles/cmTC_a6956.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ZDjwk9'
+Building C object CMakeFiles/cmTC_a6956.dir/HAVE_NET_IF_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_a6956.dir/HAVE_NET_IF_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ZDjwk9/HAVE_NET_IF_H.c
+Linking C executable cmTC_a6956
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6956.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_a6956.dir/HAVE_NET_IF_H.c.o -o cmTC_a6956 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ZDjwk9'
+
+
+
+Determining if files pcre.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Rw0XVU
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7ce07/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7ce07.dir/build.make CMakeFiles/cmTC_7ce07.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Rw0XVU'
+Building C object CMakeFiles/cmTC_7ce07.dir/HAVE_PCRE_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_7ce07.dir/HAVE_PCRE_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Rw0XVU/HAVE_PCRE_H.c
+Linking C executable cmTC_7ce07
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ce07.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_7ce07.dir/HAVE_PCRE_H.c.o -o cmTC_7ce07 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Rw0XVU'
+
+
+
+Determining if the function select exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-2TPTne
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bc439/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bc439.dir/build.make CMakeFiles/cmTC_bc439.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-2TPTne'
+Building C object CMakeFiles/cmTC_bc439.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=select -fPIE -o CMakeFiles/cmTC_bc439.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-2TPTne/CheckFunctionExists.c
+Linking C executable cmTC_bc439
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc439.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=select -rdynamic CMakeFiles/cmTC_bc439.dir/CheckFunctionExists.c.o -o cmTC_bc439 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-2TPTne'
+
+
+
+Determining if the function setresuid exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-gkYvp0
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9cdeb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9cdeb.dir/build.make CMakeFiles/cmTC_9cdeb.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-gkYvp0'
+Building C object CMakeFiles/cmTC_9cdeb.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=setresuid -fPIE -o CMakeFiles/cmTC_9cdeb.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-gkYvp0/CheckFunctionExists.c
+Linking C executable cmTC_9cdeb
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9cdeb.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=setresuid -rdynamic CMakeFiles/cmTC_9cdeb.dir/CheckFunctionExists.c.o -o cmTC_9cdeb 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-gkYvp0'
+
+
+
+Determining if the function setreuid exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-UCXMzM
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f7bd4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f7bd4.dir/build.make CMakeFiles/cmTC_f7bd4.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-UCXMzM'
+Building C object CMakeFiles/cmTC_f7bd4.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=setreuid -fPIE -o CMakeFiles/cmTC_f7bd4.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-UCXMzM/CheckFunctionExists.c
+Linking C executable cmTC_f7bd4
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7bd4.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=setreuid -rdynamic CMakeFiles/cmTC_f7bd4.dir/CheckFunctionExists.c.o -o cmTC_f7bd4 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-UCXMzM'
+
+
+
+Determining if the function setrlimit exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HM0BSy
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f1b6c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f1b6c.dir/build.make CMakeFiles/cmTC_f1b6c.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HM0BSy'
+Building C object CMakeFiles/cmTC_f1b6c.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=setrlimit -fPIE -o CMakeFiles/cmTC_f1b6c.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HM0BSy/CheckFunctionExists.c
+Linking C executable cmTC_f1b6c
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1b6c.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=setrlimit -rdynamic CMakeFiles/cmTC_f1b6c.dir/CheckFunctionExists.c.o -o cmTC_f1b6c 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HM0BSy'
+
+
+
+Determining if the function socket exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cpIDjl
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0734d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0734d.dir/build.make CMakeFiles/cmTC_0734d.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cpIDjl'
+Building C object CMakeFiles/cmTC_0734d.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=socket -fPIE -o CMakeFiles/cmTC_0734d.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cpIDjl/CheckFunctionExists.c
+Linking C executable cmTC_0734d
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0734d.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=socket -rdynamic CMakeFiles/cmTC_0734d.dir/CheckFunctionExists.c.o -o cmTC_0734d 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cpIDjl'
+
+
+
+Determining if files stdint.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-RDaiT7
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_94de5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_94de5.dir/build.make CMakeFiles/cmTC_94de5.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-RDaiT7'
+Building C object CMakeFiles/cmTC_94de5.dir/HAVE_STDINT_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_94de5.dir/HAVE_STDINT_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-RDaiT7/HAVE_STDINT_H.c
+Linking C executable cmTC_94de5
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94de5.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_94de5.dir/HAVE_STDINT_H.c.o -o cmTC_94de5 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-RDaiT7'
+
+
+
+Determining if files stdlib.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9o2FBU
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_807bd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_807bd.dir/build.make CMakeFiles/cmTC_807bd.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9o2FBU'
+Building C object CMakeFiles/cmTC_807bd.dir/HAVE_STDLIB_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_807bd.dir/HAVE_STDLIB_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9o2FBU/HAVE_STDLIB_H.c
+Linking C executable cmTC_807bd
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_807bd.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_807bd.dir/HAVE_STDLIB_H.c.o -o cmTC_807bd 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9o2FBU'
+
+
+
+Determining if the function strerror exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ysk8sH
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58d21/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58d21.dir/build.make CMakeFiles/cmTC_58d21.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ysk8sH'
+Building C object CMakeFiles/cmTC_58d21.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=strerror -fPIE -o CMakeFiles/cmTC_58d21.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ysk8sH/CheckFunctionExists.c
+Linking C executable cmTC_58d21
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58d21.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=strerror -rdynamic CMakeFiles/cmTC_58d21.dir/CheckFunctionExists.c.o -o cmTC_58d21 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ysk8sH'
+
+
+
+Determining if files strings.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9jHvtu
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5aba9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5aba9.dir/build.make CMakeFiles/cmTC_5aba9.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9jHvtu'
+Building C object CMakeFiles/cmTC_5aba9.dir/HAVE_STRINGS_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_5aba9.dir/HAVE_STRINGS_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9jHvtu/HAVE_STRINGS_H.c
+Linking C executable cmTC_5aba9
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5aba9.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_5aba9.dir/HAVE_STRINGS_H.c.o -o cmTC_5aba9 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-9jHvtu'
+
+
+
+Determining if files string.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cteuCh
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_273ea/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_273ea.dir/build.make CMakeFiles/cmTC_273ea.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cteuCh'
+Building C object CMakeFiles/cmTC_273ea.dir/HAVE_STRING_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_273ea.dir/HAVE_STRING_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cteuCh/HAVE_STRING_H.c
+Linking C executable cmTC_273ea
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_273ea.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_273ea.dir/HAVE_STRING_H.c.o -o cmTC_273ea 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cteuCh'
+
+
+
+Determining if files sys/ioctl.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-dbWHW4
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66a8d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66a8d.dir/build.make CMakeFiles/cmTC_66a8d.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-dbWHW4'
+Building C object CMakeFiles/cmTC_66a8d.dir/HAVE_SYS_IOCTL_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_66a8d.dir/HAVE_SYS_IOCTL_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-dbWHW4/HAVE_SYS_IOCTL_H.c
+Linking C executable cmTC_66a8d
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66a8d.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_66a8d.dir/HAVE_SYS_IOCTL_H.c.o -o cmTC_66a8d 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-dbWHW4'
+
+
+
+Determining if files sys/select.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-FoSLpS
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e7c3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e7c3.dir/build.make CMakeFiles/cmTC_5e7c3.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-FoSLpS'
+Building C object CMakeFiles/cmTC_5e7c3.dir/HAVE_SYS_SELECT_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_5e7c3.dir/HAVE_SYS_SELECT_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-FoSLpS/HAVE_SYS_SELECT_H.c
+Linking C executable cmTC_5e7c3
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e7c3.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_5e7c3.dir/HAVE_SYS_SELECT_H.c.o -o cmTC_5e7c3 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-FoSLpS'
+
+
+
+Determining if files sys/socket.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-kkry1F
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_731c6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_731c6.dir/build.make CMakeFiles/cmTC_731c6.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-kkry1F'
+Building C object CMakeFiles/cmTC_731c6.dir/HAVE_SYS_SOCKET_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_731c6.dir/HAVE_SYS_SOCKET_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-kkry1F/HAVE_SYS_SOCKET_H.c
+Linking C executable cmTC_731c6
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_731c6.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_731c6.dir/HAVE_SYS_SOCKET_H.c.o -o cmTC_731c6 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-kkry1F'
+
+
+
+Determining if files sys/stat.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ACygMt
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e66f1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e66f1.dir/build.make CMakeFiles/cmTC_e66f1.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ACygMt'
+Building C object CMakeFiles/cmTC_e66f1.dir/HAVE_SYS_STAT_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_e66f1.dir/HAVE_SYS_STAT_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ACygMt/HAVE_SYS_STAT_H.c
+Linking C executable cmTC_e66f1
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e66f1.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_e66f1.dir/HAVE_SYS_STAT_H.c.o -o cmTC_e66f1 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-ACygMt'
+
+
+
+Determining if files sys/types.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-NQ4SFh
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_40178/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_40178.dir/build.make CMakeFiles/cmTC_40178.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-NQ4SFh'
+Building C object CMakeFiles/cmTC_40178.dir/HAVE_SYS_TYPES_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_40178.dir/HAVE_SYS_TYPES_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-NQ4SFh/HAVE_SYS_TYPES_H.c
+Linking C executable cmTC_40178
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40178.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_40178.dir/HAVE_SYS_TYPES_H.c.o -o cmTC_40178 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-NQ4SFh'
+
+
+
+Determining if files sys/wait.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HCSJI5
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2d035/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2d035.dir/build.make CMakeFiles/cmTC_2d035.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HCSJI5'
+Building C object CMakeFiles/cmTC_2d035.dir/HAVE_SYS_WAIT_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_2d035.dir/HAVE_SYS_WAIT_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HCSJI5/HAVE_SYS_WAIT_H.c
+Linking C executable cmTC_2d035
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d035.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_2d035.dir/HAVE_SYS_WAIT_H.c.o -o cmTC_2d035 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-HCSJI5'
+
+
+
+Determining if files ares.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-N7zDUT
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2a58d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2a58d.dir/build.make CMakeFiles/cmTC_2a58d.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-N7zDUT'
+Building C object CMakeFiles/cmTC_2a58d.dir/HAVE_ARES_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_2a58d.dir/HAVE_ARES_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-N7zDUT/HAVE_ARES_H.c
+Linking C executable cmTC_2a58d
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a58d.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_2a58d.dir/HAVE_ARES_H.c.o -o cmTC_2a58d 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-N7zDUT'
+
+
+
+Determining if files unistd.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-75h2fI
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_260da/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_260da.dir/build.make CMakeFiles/cmTC_260da.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-75h2fI'
+Building C object CMakeFiles/cmTC_260da.dir/HAVE_UNISTD_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_260da.dir/HAVE_UNISTD_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-75h2fI/HAVE_UNISTD_H.c
+Linking C executable cmTC_260da
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_260da.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_260da.dir/HAVE_UNISTD_H.c.o -o cmTC_260da 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-75h2fI'
+
+
+
+Determining if the function vfork exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-hNVoKw
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_76509/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_76509.dir/build.make CMakeFiles/cmTC_76509.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-hNVoKw'
+Building C object CMakeFiles/cmTC_76509.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=vfork -fPIE -o CMakeFiles/cmTC_76509.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-hNVoKw/CheckFunctionExists.c
+Linking C executable cmTC_76509
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76509.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=vfork -rdynamic CMakeFiles/cmTC_76509.dir/CheckFunctionExists.c.o -o cmTC_76509 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-hNVoKw'
+
+
+
+Determining if files sys/time.h;time.h exist passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-8Dvv49
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_26429/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_26429.dir/build.make CMakeFiles/cmTC_26429.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-8Dvv49'
+Building C object CMakeFiles/cmTC_26429.dir/TIME_WITH_SYS_TIME.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_26429.dir/TIME_WITH_SYS_TIME.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-8Dvv49/TIME_WITH_SYS_TIME.c
+Linking C executable cmTC_26429
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26429.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_26429.dir/TIME_WITH_SYS_TIME.c.o -o cmTC_26429 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-8Dvv49'
+
+
+
+Performing C SOURCE FILE Test HAVE_GCC_THREAD_LOCAL_STORAGE succeeded with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-yaW8TY
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_675ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_675ce.dir/build.make CMakeFiles/cmTC_675ce.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-yaW8TY'
+Building C object CMakeFiles/cmTC_675ce.dir/src.c.o
+/usr/local/gcc-8.3.0/bin/gcc -DHAVE_GCC_THREAD_LOCAL_STORAGE  -std=gnu99  -fPIE -o CMakeFiles/cmTC_675ce.dir/src.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-yaW8TY/src.c
+Linking C executable cmTC_675ce
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_675ce.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_675ce.dir/src.c.o -o cmTC_675ce 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-yaW8TY'
+
+
+Source file was:
+
+        __thread int tls;
+        int main(void) { return 0; }
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-qI78RN
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6c2a8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6c2a8.dir/build.make CMakeFiles/cmTC_6c2a8.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-qI78RN'
+Building C object CMakeFiles/cmTC_6c2a8.dir/CheckIncludeFile.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_6c2a8.dir/CheckIncludeFile.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-qI78RN/CheckIncludeFile.c
+Linking C executable cmTC_6c2a8
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c2a8.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_6c2a8.dir/CheckIncludeFile.c.o -o cmTC_6c2a8 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-qI78RN'
+
+
+
+Determining size of pid_t passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cmdKYC
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a1dbb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a1dbb.dir/build.make CMakeFiles/cmTC_a1dbb.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cmdKYC'
+Building C object CMakeFiles/cmTC_a1dbb.dir/PID_T.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_a1dbb.dir/PID_T.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cmdKYC/PID_T.c
+Linking C executable cmTC_a1dbb
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1dbb.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_a1dbb.dir/PID_T.c.o -o cmTC_a1dbb 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-cmdKYC'
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-YGLoes
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ef891/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ef891.dir/build.make CMakeFiles/cmTC_ef891.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-YGLoes'
+Building C object CMakeFiles/cmTC_ef891.dir/SIZE_T.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_ef891.dir/SIZE_T.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-YGLoes/SIZE_T.c
+Linking C executable cmTC_ef891
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef891.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_ef891.dir/SIZE_T.c.o -o cmTC_ef891 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-YGLoes'
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-n6KYCh
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ebb5e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ebb5e.dir/build.make CMakeFiles/cmTC_ebb5e.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-n6KYCh'
+Building C object CMakeFiles/cmTC_ebb5e.dir/SSIZE_T.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_ebb5e.dir/SSIZE_T.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-n6KYCh/SSIZE_T.c
+Linking C executable cmTC_ebb5e
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebb5e.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_ebb5e.dir/SSIZE_T.c.o -o cmTC_ebb5e 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-n6KYCh'
+
+
+
+Determining size of uint16_t passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-LAYGa7
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_01c6b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_01c6b.dir/build.make CMakeFiles/cmTC_01c6b.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-LAYGa7'
+Building C object CMakeFiles/cmTC_01c6b.dir/UINT16_T.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_01c6b.dir/UINT16_T.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-LAYGa7/UINT16_T.c
+Linking C executable cmTC_01c6b
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01c6b.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_01c6b.dir/UINT16_T.c.o -o cmTC_01c6b 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-LAYGa7'
+
+
+
+Determining size of uint8_t passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-vH66QW
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_68ddd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_68ddd.dir/build.make CMakeFiles/cmTC_68ddd.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-vH66QW'
+Building C object CMakeFiles/cmTC_68ddd.dir/UINT8_T.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_68ddd.dir/UINT8_T.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-vH66QW/UINT8_T.c
+Linking C executable cmTC_68ddd
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68ddd.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_68ddd.dir/UINT8_T.c.o -o cmTC_68ddd 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-vH66QW'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-8xNiOs
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2b409/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2b409.dir/build.make CMakeFiles/cmTC_2b409.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-8xNiOs'
+Building C object CMakeFiles/cmTC_2b409.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -o CMakeFiles/cmTC_2b409.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-8xNiOs/CheckFunctionExists.c
+Linking C executable cmTC_2b409
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b409.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_2b409.dir/CheckFunctionExists.c.o -o cmTC_2b409  -lpthread 
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-8xNiOs'
+
+
+

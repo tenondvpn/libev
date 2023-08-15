@@ -1,0 +1,252 @@
+Determining if the function socket exists in the socket failed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Vgr0Zm
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4e6b1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4e6b1.dir/build.make CMakeFiles/cmTC_4e6b1.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Vgr0Zm'
+Building C object CMakeFiles/cmTC_4e6b1.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=socket -fPIE -o CMakeFiles/cmTC_4e6b1.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Vgr0Zm/CheckFunctionExists.c
+Linking C executable cmTC_4e6b1
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e6b1.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=socket -rdynamic CMakeFiles/cmTC_4e6b1.dir/CheckFunctionExists.c.o -o cmTC_4e6b1  -lsocket 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_4e6b1] Error 1
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-Vgr0Zm'
+gmake: *** [cmTC_4e6b1/fast] Error 2
+
+
+
+Determining if files linux/if.h exist failed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-QYkM2Q
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7795b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7795b.dir/build.make CMakeFiles/cmTC_7795b.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-QYkM2Q'
+Building C object CMakeFiles/cmTC_7795b.dir/HAVE_LINUX_IF_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_7795b.dir/HAVE_LINUX_IF_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-QYkM2Q/HAVE_LINUX_IF_H.c
+In file included from /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-QYkM2Q/HAVE_LINUX_IF_H.c:2:
+/usr/include/linux/if.h:211:19: error: field ‘ifru_addr’ has incomplete type
+   struct sockaddr ifru_addr;
+                   ^~~~~~~~~
+/usr/include/linux/if.h:212:19: error: field ‘ifru_dstaddr’ has incomplete type
+   struct sockaddr ifru_dstaddr;
+                   ^~~~~~~~~~~~
+/usr/include/linux/if.h:213:19: error: field ‘ifru_broadaddr’ has incomplete type
+   struct sockaddr ifru_broadaddr;
+                   ^~~~~~~~~~~~~~
+/usr/include/linux/if.h:214:19: error: field ‘ifru_netmask’ has incomplete type
+   struct sockaddr ifru_netmask;
+                   ^~~~~~~~~~~~
+/usr/include/linux/if.h:215:20: error: field ‘ifru_hwaddr’ has incomplete type
+   struct  sockaddr ifru_hwaddr;
+                    ^~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_7795b.dir/HAVE_LINUX_IF_H.c.o] Error 1
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-QYkM2Q'
+gmake: *** [cmTC_7795b/fast] Error 2
+
+
+Source:
+/* */
+#include <linux/if.h>
+
+
+int main(void){return 0;}
+
+Determining if files linux/netfilter_ipv4.h exist failed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-zVHxcB
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_144ca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_144ca.dir/build.make CMakeFiles/cmTC_144ca.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-zVHxcB'
+Building C object CMakeFiles/cmTC_144ca.dir/HAVE_LINUX_NETFILTER_IPV4_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_144ca.dir/HAVE_LINUX_NETFILTER_IPV4_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-zVHxcB/HAVE_LINUX_NETFILTER_IPV4_H.c
+In file included from /usr/include/linux/netfilter.h:6,
+                 from /usr/include/linux/netfilter_ipv4.h:8,
+                 from /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-zVHxcB/HAVE_LINUX_NETFILTER_IPV4_H.c:2:
+/usr/include/linux/sysctl.h:40:2: error: unknown type name ‘size_t’
+  size_t *oldlenp;
+  ^~~~~~
+/usr/include/linux/sysctl.h:42:2: error: unknown type name ‘size_t’
+  size_t newlen;
+  ^~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_144ca.dir/HAVE_LINUX_NETFILTER_IPV4_H.c.o] Error 1
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-zVHxcB'
+gmake: *** [cmTC_144ca/fast] Error 2
+
+
+Source:
+/* */
+#include <linux/netfilter_ipv4.h>
+
+
+int main(void){return 0;}
+
+Determining if files linux/netfilter_ipv6/ip6_tables.h exist failed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-U3K4ql
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_405e2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_405e2.dir/build.make CMakeFiles/cmTC_405e2.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-U3K4ql'
+Building C object CMakeFiles/cmTC_405e2.dir/HAVE_LINUX_NETFILTER_IPV6_IP6_TABLES_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_405e2.dir/HAVE_LINUX_NETFILTER_IPV6_IP6_TABLES_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-U3K4ql/HAVE_LINUX_NETFILTER_IPV6_IP6_TABLES_H.c
+In file included from /usr/include/linux/netfilter.h:6,
+                 from /usr/include/linux/netfilter_ipv6.h:11,
+                 from /usr/include/linux/netfilter_ipv6/ip6_tables.h:20,
+                 from /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-U3K4ql/HAVE_LINUX_NETFILTER_IPV6_IP6_TABLES_H.c:2:
+/usr/include/linux/sysctl.h:40:2: error: unknown type name ‘size_t’
+  size_t *oldlenp;
+  ^~~~~~
+/usr/include/linux/sysctl.h:42:2: error: unknown type name ‘size_t’
+  size_t newlen;
+  ^~~~~~
+In file included from /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-U3K4ql/HAVE_LINUX_NETFILTER_IPV6_IP6_TABLES_H.c:2:
+/usr/include/linux/netfilter_ipv6/ip6_tables.h:65:15: error: ‘IFNAMSIZ’ undeclared here (not in a function)
+  char iniface[IFNAMSIZ], outiface[IFNAMSIZ];
+               ^~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_405e2.dir/HAVE_LINUX_NETFILTER_IPV6_IP6_TABLES_H.c.o] Error 1
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-U3K4ql'
+gmake: *** [cmTC_405e2/fast] Error 2
+
+
+Source:
+/* */
+#include <linux/netfilter_ipv6/ip6_tables.h>
+
+
+int main(void){return 0;}
+
+Determining if files pcre/pcre.h exist failed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-n2grGG
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d557c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d557c.dir/build.make CMakeFiles/cmTC_d557c.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-n2grGG'
+Building C object CMakeFiles/cmTC_d557c.dir/HAVE_PCRE_PCRE_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_d557c.dir/HAVE_PCRE_PCRE_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-n2grGG/HAVE_PCRE_PCRE_H.c
+/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-n2grGG/HAVE_PCRE_PCRE_H.c:2:10: fatal error: pcre/pcre.h: No such file or directory
+ #include <pcre/pcre.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_d557c.dir/HAVE_PCRE_PCRE_H.c.o] Error 1
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-n2grGG'
+gmake: *** [cmTC_d557c/fast] Error 2
+
+
+Source:
+/* */
+#include <pcre/pcre.h>
+
+
+int main(void){return 0;}
+
+Determining if the PTHREAD_PRIO_INHERIT exist failed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s5ARus
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98f41/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_98f41.dir/build.make CMakeFiles/cmTC_98f41.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s5ARus'
+Building C object CMakeFiles/cmTC_98f41.dir/CheckSymbolExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_98f41.dir/CheckSymbolExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s5ARus/CheckSymbolExists.c
+/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s5ARus/CheckSymbolExists.c: In function ‘main’:
+/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s5ARus/CheckSymbolExists.c:8:18: error: lvalue required as unary ‘&’ operand
+   return ((int*)(&PTHREAD_PRIO_INHERIT))[argc];
+                  ^
+gmake[1]: *** [CMakeFiles/cmTC_98f41.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-s5ARus'
+gmake: *** [cmTC_98f41/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PTHREAD_PRIO_INHERIT
+  return ((int*)(&PTHREAD_PRIO_INHERIT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if files vfork.h exist failed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-KKtznl
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f3360/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f3360.dir/build.make CMakeFiles/cmTC_f3360.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-KKtznl'
+Building C object CMakeFiles/cmTC_f3360.dir/HAVE_VFORK_H.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99  -fPIE -o CMakeFiles/cmTC_f3360.dir/HAVE_VFORK_H.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-KKtznl/HAVE_VFORK_H.c
+/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-KKtznl/HAVE_VFORK_H.c:2:10: fatal error: vfork.h: No such file or directory
+ #include <vfork.h>
+          ^~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_f3360.dir/HAVE_VFORK_H.c.o] Error 1
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-KKtznl'
+gmake: *** [cmTC_f3360/fast] Error 2
+
+
+Source:
+/* */
+#include <vfork.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-kHiTHM
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_344bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_344bc.dir/build.make CMakeFiles/cmTC_344bc.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-kHiTHM'
+Building C object CMakeFiles/cmTC_344bc.dir/src.c.o
+/usr/local/gcc-8.3.0/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu99  -fPIE -o CMakeFiles/cmTC_344bc.dir/src.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-kHiTHM/src.c
+Linking C executable cmTC_344bc
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_344bc.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99  -rdynamic CMakeFiles/cmTC_344bc.dir/src.c.o -o cmTC_344bc 
+CMakeFiles/cmTC_344bc.dir/src.c.o: In function `main':
+src.c:(.text+0x2f): undefined reference to `pthread_create'
+src.c:(.text+0x3b): undefined reference to `pthread_detach'
+src.c:(.text+0x47): undefined reference to `pthread_cancel'
+src.c:(.text+0x58): undefined reference to `pthread_join'
+src.c:(.text+0x6c): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_344bc] Error 1
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-kHiTHM'
+gmake: *** [cmTC_344bc/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-CnPDHC
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8209c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8209c.dir/build.make CMakeFiles/cmTC_8209c.dir/build
+gmake[1]: Entering directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-CnPDHC'
+Building C object CMakeFiles/cmTC_8209c.dir/CheckFunctionExists.c.o
+/usr/local/gcc-8.3.0/bin/gcc   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -o CMakeFiles/cmTC_8209c.dir/CheckFunctionExists.c.o -c /root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-CnPDHC/CheckFunctionExists.c
+Linking C executable cmTC_8209c
+/root/tools/cmake-3.25.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8209c.dir/link.txt --verbose=1
+/usr/local/gcc-8.3.0/bin/gcc  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_8209c.dir/CheckFunctionExists.c.o -o cmTC_8209c  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_8209c] Error 1
+gmake[1]: Leaving directory `/root/BVPN/third_party/shadowsocks-libev/build/CMakeFiles/CMakeScratch/TryCompile-CnPDHC'
+gmake: *** [cmTC_8209c/fast] Error 2
+
+
+

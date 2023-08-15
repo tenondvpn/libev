@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libbloom.a CMakeFiles/bloom.dir/libbloom/bloom.c.o CMakeFiles/bloom.dir/libbloom/murmur2/MurmurHash2.c.o
+/usr/bin/ranlib lib/libbloom.a

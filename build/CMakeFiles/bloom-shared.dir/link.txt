@@ -1,0 +1,1 @@
+/usr/local/gcc-8.3.0/bin/gcc -fPIC  -std=gnu99 -g -shared -Wl,-soname,libbloom.so -o lib/libbloom.so "CMakeFiles/bloom-shared.dir/libbloom/bloom.c.o" "CMakeFiles/bloom-shared.dir/libbloom/murmur2/MurmurHash2.c.o" 
