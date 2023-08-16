@@ -208,7 +208,7 @@ aead_cipher_encrypt(cipher_ctx_t *cipher_ctx,
         }
 
         err = CRYPTO_OK;
-        *clen += tlen;
+        //*clen += tlen;
         break;
     default:
         return CRYPTO_ERROR;
@@ -257,14 +257,16 @@ aead_cipher_decrypt(cipher_ctx_t *cipher_ctx,
         *plen = (size_t)long_plen; // it's safe to cast 64bit to 32bit length here
         break;
 #endif
-    case SM4GCM:
-        err = sm4_gcm_decrypt(&cipher_ctx->sm4_key, n, nlen, NULL, 0, m, mlen, m + mlen - tlen, tlen, p);
+    case SM4GCM: {
+        // TEST
+        err = sm4_gcm_decrypt(&cipher_ctx->sm4_key, n, nlen, NULL, 0, m, mlen - tlen, m + mlen - tlen, tlen, p);
         if (err != 1) {
             return CRYPTO_ERROR;
         }
-
         err = CRYPTO_OK;
+        *plen = (size_t)(mlen- tlen); // it's safe to cast 64bit to 32bit length here
         break;
+    }
     default:
         return CRYPTO_ERROR;
     }
@@ -337,8 +339,6 @@ aead_cipher_ctx_set_key(cipher_ctx_t *cipher_ctx, int enc)
         return;
     }
 
-    printf("set key len cipher_ctx->cipher->key_len: %ld, * 8: %ld",
-        cipher_ctx->cipher->key_len, cipher_ctx->cipher->key_len * 8);
     if (cipher_ctx->cipher->method == SM4GCM) {
         uint8_t user_key[16];
         memcpy(user_key, cipher_ctx->skey, sizeof(user_key));
