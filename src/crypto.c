@@ -41,7 +41,7 @@
 #include "stream.h"
 #include "aead.h"
 #include "utils.h"
-#include "ppbloom.h"
+// #include "ppbloom.h"
 
 int
 balloc(buffer_t *ptr, size_t capacity)
