@@ -49,7 +49,7 @@
  * methods below doesn't require it,
  * then we need to fake one
  */
-#define CHACHA20POLY1305IETF    6
+#define CHACHA20POLY1305IETF    3
 
 #ifdef FS_HAVE_XCHACHA20IETF
 #define XCHACHA20POLY1305IETF   4
@@ -154,6 +154,25 @@ static const int supported_aead_ciphers_tag_size[AEAD_CIPHER_NUM] = {
 #endif
     16
 };
+
+// static char *bin2hex(const unsigned char *bin, size_t len)
+// {
+//     char   *out;
+//     size_t  i;
+// 
+//     if (bin == NULL || len == 0)
+//         return NULL;
+// 
+//     out = malloc(len * 2 + 1);
+//     for (i = 0; i < len; i++) {
+//         out[i * 2] = "0123456789ABCDEF"[bin[i] >> 4];
+//         out[i * 2 + 1] = "0123456789ABCDEF"[bin[i] & 0x0F];
+//     }
+//     out[len * 2] = '\0';
+// 
+//     return out;
+// }
+
 
 static int
 aead_cipher_encrypt(cipher_ctx_t *cipher_ctx,
@@ -293,7 +312,7 @@ aead_get_cipher_type(int method)
     }
 
     /* cipher that don't use mbed TLS, just return */
-    if (method >= CHACHA20POLY1305IETF) {
+    if (method >= CHACHA20POLY1305IETF && method < SM4GCM) {
         return NULL;
     }
 
@@ -328,7 +347,7 @@ aead_cipher_ctx_set_key(cipher_ctx_t *cipher_ctx, int enc)
     memset(cipher_ctx->nonce, 0, cipher_ctx->cipher->nonce_len);
 
     /* cipher that don't use mbed TLS, just return */
-    if (cipher_ctx->cipher->method >= CHACHA20POLY1305IETF) {
+    if (cipher_ctx->cipher->method >= CHACHA20POLY1305IETF && cipher_ctx->cipher->method < SM4GCM) {
         return;
     }
     if (cipher_ctx->aes256gcm_ctx != NULL) {
@@ -363,7 +382,7 @@ aead_cipher_ctx_init(cipher_ctx_t *cipher_ctx, int method, int enc)
         return;
     }
 
-    if (method >= CHACHA20POLY1305IETF) {
+    if (method >= CHACHA20POLY1305IETF && method < SM4GCM) {
         return;
     }
 
@@ -421,7 +440,7 @@ aead_ctx_release(cipher_ctx_t *cipher_ctx)
         cipher_ctx->chunk = NULL;
     }
 
-    if (cipher_ctx->cipher->method >= CHACHA20POLY1305IETF) {
+    if (cipher_ctx->cipher->method >= CHACHA20POLY1305IETF && cipher_ctx->cipher->method < SM4GCM) {
         return;
     }
 
@@ -505,7 +524,6 @@ aead_decrypt_all(buffer_t *ciphertext, cipher_t *cipher, size_t capacity)
     }
 
     aead_cipher_ctx_set_key(&cipher_ctx, 0);
-
     size_t plen = plaintext->len;
     err = aead_cipher_decrypt(&cipher_ctx,
                               (uint8_t *)plaintext->data, &plen,
