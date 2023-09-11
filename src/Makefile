@@ -84,10 +84,10 @@ host_triplet = x86_64-unknown-linux-gnu
 am__append_1 = -I$(top_srcdir)/libbloom \
 	-I$(top_srcdir)/libipset/include \
 	-I$(top_srcdir)/libcork/include \
-	-I$(top_srcdir)/libgmssl/include 
+	-I$(top_srcdir)/libsm/include
 am__append_2 = $(top_builddir)/libbloom/libbloom.la \
                   $(top_builddir)/libipset/libipset.la \
-                  $(top_builddir)/libcork/libcork.la
+                  $(top_builddir)/libcork/libcork.la 
 
 #am__append_3 = -lbloom -lcork -lcorkipset
 bin_PROGRAMS = ss-local$(EXEEXT) ss-tunnel$(EXEEXT) ss-server$(EXEEXT) \
@@ -378,7 +378,7 @@ LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
 LIBPCRE = -lpcre
-LIBS = -lev  -lcares -lsodium -lmbedcrypto -lpcre 
+LIBS = -L. -lsm -lgmp -lssl -lcrypto -lev -lcares -lsodium -lmbedcrypto -lpcre 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
@@ -481,7 +481,7 @@ AM_CFLAGS = -g -O2 -Wall -Werror -Wno-deprecated-declarations \
 	$(PTHREAD_CFLAGS) $(am__append_1) $(LIBPCRE_CFLAGS)
 SS_COMMON_LIBS = $(INET_NTOP_LIB) $(LIBPCRE_LIBS) \
 	$(NETFILTER_CONNTRACK_LIBS) $(NFTABLES_LIBS) $(am__append_2) \
-	$(am__append_3) -L. -lgmssl -lev -lsodium -lm
+	$(am__append_3) -lev -lsodium -lm
 acl_src = rule.c \
           acl.c
 
