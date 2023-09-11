@@ -39,6 +39,7 @@
 #include "aead.h"
 #include "utils.h"
 #include "winsock.h"
+#include "log_util.c"
 
 #define NONE                    (-1)
 #define AES128GCM               0
@@ -59,6 +60,21 @@
 
 #define CHUNK_SIZE_LEN          2
 #define CHUNK_SIZE_MASK         0x3FFF
+#define RET_OK    0
+#define RESP_SMCRYPTO_OK            0                                    /* 成功 */
+
+const unsigned char SM4_GCM_TEST_KEY[16] = {0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98,
+                                            0x76, 0x54, 0x32, 0x10};
+const unsigned char SM4_GCM_TEST_IV[16] = {0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98, 0x76,
+                                           0x54, 0x32, 0x10};
+const unsigned char SM4_GCM_TEST_AAD[16] = {0x26, 0x77, 0xF4, 0x6B, 0x09, 0xC1, 0x22, 0xCC, 0x97, 0x55, 0x33, 0x10,
+                                            0x5B, 0xD4, 0xA2, 0x2A};
+const unsigned char SM4_GCM_TEST_PLAIN[64] = {0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98,
+                                              0x76, 0x54, 0x32, 0x10, 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef,
+                                              0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10, 0x01, 0x23, 0x45, 0x67,
+                                              0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98, 0x76, 0x54, 0x32, 0x10,
+                                              0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0xfe, 0xdc, 0xba, 0x98,
+                                              0x76, 0x54, 0x32, 0x10};
 
 /*
  * Spec: http://shadowsocks.org/en/spec/AEAD-Ciphers.html
@@ -166,6 +182,57 @@ aead_cipher_encrypt(cipher_ctx_t *cipher_ctx,
                     uint8_t *n,
                     uint8_t *k)
 {
+    char buffer[2000];
+    memset(buffer, 0, sizeof(buffer));
+    sprintf(buffer,"====>cipher_ctx->cipher->key_len:%ld,method:%d,nonce_len:%ld,tag_len:%ld,clen:%ld,mlen:%ld,adlen:%ld\n",
+ cipher_ctx->cipher->key_len,cipher_ctx->cipher->method,cipher_ctx->cipher->nonce_len,cipher_ctx->cipher->tag_len,*clen,mlen,adlen);
+    write_log_file("log.txt", FILE_MAX_SIZE, buffer, strlen(buffer));
+/*
+    printf("cipher_ctx->cipher->key_len: %ld, method: %d, nonce_len: %ld, tag_len: %ld, clen: %ld, mlen: %ld, adlen: %ld\n",
+        cipher_ctx->cipher->key_len, cipher_ctx->cipher->method, cipher_ctx->cipher->nonce_len, cipher_ctx->cipher->tag_len, *clen, mlen, adlen);
+    printf("\nencrypt,nonce=");
+    for (int j = 0; j < 1; j++) {
+        printf("%d", *(n + j));
+    }
+    printf("-"); 
+    for (int j = 0; j < 16; j++) {
+        printf("%d", *(k + j));
+    }
+    printf("\n");
+    */
+    memset(buffer, 0, sizeof(buffer));
+    sprintf(buffer, "====>encrypt-plen: %ld\n", mlen);
+    write_log_file("log.txt", FILE_MAX_SIZE, buffer, strlen(buffer));
+    
+    memset(buffer, 0, sizeof(buffer));
+    buffer[0] = ' '; 
+    int index = 1;
+    for(int kk=0; kk <mlen && kk < 500; kk++){
+       int num = *(m+kk);
+       char str[10];
+       sprintf(str, "%d", num);
+       int i;
+       int number = 3;
+       if(num <10){
+          number = 1;
+       }else if (num < 100){
+          number = 2;
+       }
+       for (i=0; i<number; ++i){
+          buffer[index]  = str[i];
+          index++;
+       }
+    }
+    if(mlen >= 500){
+       buffer[index]='*';
+       index++;
+       buffer[index]='*';
+       index++;
+       buffer[index]='*';
+       index++; 
+    }
+    buffer[index] = '\n';
+    write_log_file("log.txt", FILE_MAX_SIZE, buffer, strlen(buffer));
     int err                      = CRYPTO_OK;
     unsigned long long long_clen = 0;
 
@@ -201,15 +268,23 @@ aead_cipher_encrypt(cipher_ctx_t *cipher_ctx,
         *clen = (size_t)long_clen;
         break;
 #endif
-    case SM4GCM:
-        err = sm4_gcm_encrypt(&cipher_ctx->sm4_key, n, nlen, NULL, 0, m, mlen, c, tlen, c + mlen);
-        if (err != 1) {
+    case SM4GCM:{
+        //sm2_ctx_t sm2_ctx;
+        //init_sm2_ctx(&sm2_ctx);
+        //err = sm4_gcm_encrypt(&cipher_ctx->sm4_key, n, nlen, NULL, 0, m, mlen, c, tlen, c + mlen);
+        err = gcm_encrypt(m, mlen, c, clen, c + mlen, &tlen,
+            cipher_ctx->skey, cipher_ctx->cipher->key_len * 8,
+            n, nlen, NULL, 0,
+            NO_PADDING, SM4);
+        printf("encrypt ret: %d\n", err);
+        if (err != 0) {
             return CRYPTO_ERROR;
         }
 
         err = CRYPTO_OK;
-        //*clen += tlen;
+        *clen += tlen;
         break;
+      }
     default:
         return CRYPTO_ERROR;
     }
@@ -217,13 +292,142 @@ aead_cipher_encrypt(cipher_ctx_t *cipher_ctx,
     return err;
 }
 
+//unsigned long get_tick_count() {
+//  return 0;
+//}
+
+void random_content(size_t len, unsigned char *out) {
+
+    for (size_t i = 0; i < len; ++i) {
+        srand((unsigned int) time(NULL) + (unsigned int) i);
+        out[i] = rand() % 256;
+    }
+}
+
+void test_sm4_gcm_encrypt_decrypt(int times, size_t data_length) {
+    int ret = RET_OK;
+    size_t plainlen = data_length;
+    unsigned char plain[plainlen];
+//    random_content(plainlen, plain);
+    memcpy(plain, SM4_GCM_TEST_PLAIN, plainlen);
+    int j = 0 ;
+    for (j = 0; j < plainlen; j++){
+        fprintf(stdout, "plain[%d]=%d\n",j,plain[j] );
+    }
+
+    size_t cipherlen = plainlen + 16;
+    unsigned char cipher[cipherlen];
+    memset(cipher, 0x00, cipherlen);
+
+    unsigned char tag[16] = {0};
+    size_t taglen = 16;
+
+    unsigned char outplain[cipherlen];
+    memset(outplain, 0x00, cipherlen);
+    size_t outplainlen = cipherlen;
+
+   // unsigned long encrypt_total_time = 0;
+   // unsigned long decrypt_total_time = 0;
+    for (j = 0; j < cipherlen; j++){
+        fprintf(stdout, "cipher[%d]=%d\n",j,cipher[j] );
+    }
+
+    for (int i = 0; i < times; i++) {
+        //unsigned long encrypt_begin = get_tick_count();
+        fprintf(stdout, "cipherlen=%ld\n",cipherlen );
+        fprintf(stdout, "plainlen=%ld\n",plainlen);
+        fprintf(stdout, "taglen=%ld\n",taglen);
+        for (j = 0; j < 16; j++){
+            fprintf(stdout, "key[%d]=%d\n",j,SM4_GCM_TEST_KEY[j] );
+        }
+        for (j = 0; j < 16; j++){
+            fprintf(stdout, "iv[%d]=%d\n",j,SM4_GCM_TEST_IV[j] );
+        }
+        for (j = 0; j < 16; j++){
+            fprintf(stdout, "aad[%d]=%d\n",j,SM4_GCM_TEST_AAD[j] );
+        }
+        fprintf(stdout, "no_padding=%d\n",NO_PADDING);
+        fprintf(stdout, "sm4=%d\n",SM4);
+
+        ret = gcm_encrypt(plain, plainlen, cipher, &cipherlen, tag, &taglen,
+                          SM4_GCM_TEST_KEY, sizeof(SM4_GCM_TEST_KEY) * 8,
+                          SM4_GCM_TEST_IV, 16, SM4_GCM_TEST_AAD, 16,
+                          NO_PADDING, SM4);
+       // ret =  SM4_GCM_Encrypt_NoPadding_NIST_SP800_38D(plain, plainlen, cipher, &cipherlen, tag, &taglen,
+       //                   SM4_GCM_TEST_KEY,SM4_GCM_TEST_IV, 16, SM4_GCM_TEST_AAD, 16);
+        fprintf(stdout, "-----cipherlen=%ld\n",cipherlen );
+        fprintf(stdout, "SM4 GCM asymmetric_encrypt throw error,ret=%d\n", ret);
+        if (ret != RESP_SMCRYPTO_OK) {
+            fprintf(stdout, "SM4 GCM asymmetric_encrypt throw error.\n");
+            break;
+        }
+
+       // unsigned long encrypt_end_or_decrypt_begin = get_tick_count();
+       // encrypt_total_time += encrypt_end_or_decrypt_begin - encrypt_begin;
+
+        ret = gcm_decrypt(cipher, cipherlen, outplain, &outplainlen, tag, taglen,
+                          SM4_GCM_TEST_KEY, sizeof(SM4_GCM_TEST_KEY) * 8,
+                          SM4_GCM_TEST_IV, 16, SM4_GCM_TEST_AAD, 16,
+                          NO_PADDING, SM4);
+        if (ret != RESP_SMCRYPTO_OK) {
+            fprintf(stdout, "SM4 GCM asymmetric_decrypt throw error.");
+            break;
+        }
+
+       // unsigned long decrypt_end = get_tick_count();
+      //  decrypt_total_time += decrypt_end - encrypt_end_or_decrypt_begin;
+
+        if (outplainlen != plainlen || memcmp(outplain, plain, plainlen)) {
+            fprintf(stdout, "SM4 GCM asymmetric_decrypt plain is not equal to plain.");
+            break;
+        }
+    }
+   /*
+    double encrypt_count_per_second = (float) times / (encrypt_total_time / 1000.0);
+    double decrypt_count_per_second = (float) times / (decrypt_total_time / 1000.0);
+
+    printf("SM4-GCM asymmetric_encrypt perf:[block size:%lu][tps :%lu][%lf MBps]\n",
+           data_length, (long) encrypt_count_per_second, data_length * encrypt_count_per_second / 1024 / 1024);
+
+    printf("SM4-GCM asymmetric_decrypt perf:[block size:%lu][tps :%lu][%lf MBps]\n",
+           data_length, (long) decrypt_count_per_second, data_length * decrypt_count_per_second / 1024 / 1024);
+   */
+}
+
+
 static int
 aead_cipher_decrypt(cipher_ctx_t *cipher_ctx,
                     uint8_t *p, size_t *plen,
                     uint8_t *m, size_t mlen,
                     uint8_t *ad, size_t adlen,
                     uint8_t *n, uint8_t *k)
-{
+{/*
+    printf("\ndecrypt,nonce=");
+    for (int j = 0; j < 1; j++) {
+        printf("%d", *(n + j));
+    }
+    printf("-"); 
+    for (int j = 0; j < 16; j++) {
+        printf("%d", *(k + j));
+    }
+    printf("\n");
+ */  
+ /*   printf("cipher_ctx->cipher->key_len: %ld, method: %d, nonce_len: %ld, tag_len: %ld, plen: %ld, mlen: %ld, adlen: %ld\n",
+        cipher_ctx->cipher->key_len, cipher_ctx->cipher->method, cipher_ctx->cipher->nonce_len, cipher_ctx->cipher->tag_len, *plen, mlen, adlen);
+    printf("--------n-begin--------\n");
+    for (int j = 0; j < cipher_ctx->cipher->nonce_len; j++) {
+        printf("  %d  ", *(n + j));
+    }
+    printf("--------n-end--------\n");
+    for (int j = 0; j < 16; j++) {
+        printf(" %d ", *(k + j));
+    }
+    printf("--------k-over--------\n");
+    for (int j = 0; j < 16; j++) {
+        printf(" %d ", cipher_ctx->sm4_key.rk[j]);
+    }
+    printf("--------key-over--------\n");
+   */
     int err                      = CRYPTO_ERROR;
     unsigned long long long_plen = 0;
 
@@ -259,8 +463,15 @@ aead_cipher_decrypt(cipher_ctx_t *cipher_ctx,
 #endif
     case SM4GCM: {
         // TEST
-        err = sm4_gcm_decrypt(&cipher_ctx->sm4_key, n, nlen, NULL, 0, m, mlen - tlen, m + mlen - tlen, tlen, p);
-        if (err != 1) {
+        //err = sm4_gcm_decrypt(&cipher_ctx->sm4_key, n, nlen, NULL, 0, m, mlen - tlen, m + mlen - tlen, tlen, p);
+     
+        err = gcm_decrypt(m, mlen - tlen, p, plen, m + mlen - tlen, tlen,
+           cipher_ctx->skey, cipher_ctx->cipher->key_len * 8,
+           n, nlen, NULL, 0,
+           NO_PADDING, SM4); 
+      
+       //test_sm4_gcm_encrypt_decrypt(1,64);
+       if (err != 0) {
             return CRYPTO_ERROR;
         }
         err = CRYPTO_OK;
@@ -270,7 +481,12 @@ aead_cipher_decrypt(cipher_ctx_t *cipher_ctx,
     default:
         return CRYPTO_ERROR;
     }
-
+    printf("\ndecrypt-plen:%ld,p=",*plen);
+    for (int j = 0; j < *plen; j++) {
+        printf("%d", *(p + j));
+    }
+    printf("\n");
+  
     // The success return value ln libsodium and mbedTLS are both 0
     if (err != 0)
         // Although we never return any library specific value in the caller,
@@ -279,6 +495,7 @@ aead_cipher_decrypt(cipher_ctx_t *cipher_ctx,
 
     return err;
 }
+
 
 /*
  * get basic cipher info structure
@@ -342,7 +559,7 @@ aead_cipher_ctx_set_key(cipher_ctx_t *cipher_ctx, int enc)
     if (cipher_ctx->cipher->method == SM4GCM) {
         uint8_t user_key[16];
         memcpy(user_key, cipher_ctx->skey, sizeof(user_key));
-        sm4_set_encrypt_key(&cipher_ctx->sm4_key, user_key);
+       // sm4_set_encrypt_key(&cipher_ctx->sm4_key, user_key);
     } else {
         if (mbedtls_cipher_setkey(cipher_ctx->evp, cipher_ctx->skey,
             cipher_ctx->cipher->key_len * 8, enc) != 0) {

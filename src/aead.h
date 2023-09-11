@@ -24,6 +24,7 @@
 #define _AEAD_H
 
 #include "crypto.h"
+#include "api.h"
 
 // currently, XCHACHA20POLY1305IETF is not released yet
 // XCHACHA20POLY1305 is removed in upstream
