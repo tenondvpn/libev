@@ -40,7 +40,6 @@
 #include <sodium.h>
 typedef crypto_aead_aes256gcm_state aes256gcm_ctx;
 /* Definitions for mbedTLS */
-#include <gmssl/sm4.h>
 #include <mbedtls/cipher.h>
 #include <mbedtls/md.h>
 typedef mbedtls_cipher_info_t cipher_kt_t;
@@ -115,7 +114,6 @@ typedef struct {
     uint8_t salt[MAX_KEY_LENGTH];
     uint8_t skey[MAX_KEY_LENGTH];
     uint8_t nonce[MAX_NONCE_LENGTH];
-    SM4_KEY sm4_key;
 } cipher_ctx_t;
 
 typedef struct crypto {
